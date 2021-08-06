@@ -4,7 +4,7 @@ const port = 3000
 
 //mongoose를 이용하여 mongoDB 연결
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://yeonuk:pyu10812!!@boilerplate.zmh0f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://yeonuk:<password>@boilerplate.zmh0f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
   useNewUrlParser : true, useUnifiedTopology: true, useCreateIndex : true, useFindAndModify: false
 }).then(() => console.log('mongoDB Connected...'))
   .catch(err => console.log(err))
